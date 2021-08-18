@@ -1,0 +1,32 @@
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding: 0 30px;
+    transition: all ease 0.2s;
+}
+
+.header--logo {
+    height: 30px;
+}
+.header--userLogo{
+    height: 35px;
+}
+
+.header--logo img{
+    height: 100%;
+}
+.header--userLogo img{
+    height: 100%;
+    border-radius: 5px;
+}
+.setBlackHeader{
+    background-color: #141414;
+}
+
