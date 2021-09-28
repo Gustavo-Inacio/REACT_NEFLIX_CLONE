@@ -29,9 +29,37 @@ body{
 
 .footer{
     display: flex;
-    height: 150px;
+    flex-direction: column;
+    min-height: 150px;
     justify-content: center;
     align-items: center;
+    padding: 70px;
+    padding-top: 30px;
+}
+
+.footer p{
+    color: #fff;
+    font-size: 20px; 
+    
+}
+.footer a{
+    color: rgb(0, 169, 211);
+    text-decoration: none;
+}
+
+.netflix-rights, .my-email{
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+.disclaimer{
+    align-self: flex-start;
+    color: rgba(0, 169, 211, 0.705) !important;
+}
+
+.netflix-rights a{
+    color:#ff000d;
+    background-color: rgba(26, 26, 26, 0.342);
 }
 
 .tmdb-icon{

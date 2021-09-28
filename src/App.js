@@ -69,7 +69,12 @@ function App() {
           <a href="https://www.themoviedb.org/">
             <img className="tmdb-icon" alt="TMDB" src={TmdbIcon}></img>
           </a>
+          
         </p>
+
+        <p className="netflix-rights">Direitos de imagem e design para <a href="https://www.netflix.com/br/">Netflix</a></p>
+        <p className="my-email">Para fins educacionais. Desenvolvido por <a href="mailto:inacio.gustavo456@gmail.com" >Gustavo Inacio</a></p>
+        <p className="disclaimer">Atualizações estão por vir!</p>
       </footer>
 
       {movielist <= 0 && !feturedData && 
