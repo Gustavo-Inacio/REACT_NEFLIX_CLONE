@@ -26,7 +26,7 @@ const createMovieList = async (slug, title, url) => {
 const getHomeList = async () => {
     return (
         [
-            await createMovieList('originals', 'Originais da Netflix', '/discover/tv'),
+            await createMovieList('originals', 'Séries Recomendadas', '/discover/tv'),
             await createMovieList('trending', 'Recomendados para Você', '/trending/all/week'),
             await createMovieList('toprated', 'Em Alta', '/movie/top_rated'),
             await createMovieList('action', 'Ação', '/discover/movie?with_genres=28'),
