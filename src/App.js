@@ -66,7 +66,7 @@ function App() {
           ))}
       </section>
 
-      <footer class="footer">
+      <footer className="footer">
         <p> 
           <a href="https://www.themoviedb.org/">
             <img class="tmdb-icon" src={TmdbIcon}></img>

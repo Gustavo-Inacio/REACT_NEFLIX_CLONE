@@ -4,7 +4,7 @@ const language = "pt-BR";
 
 const basicFetch = {
     fetch: async (endingPoint) => {
-        return (await fetch(`${API_BASE}${endingPoint}api_key=${API_KEY}&language=${language}`)).json();
+        return (await fetch(`https://api.themoviedb.org/3${endingPoint}api_key=${API_KEY}&language=${language}`)).json();
     },
     urlFix: async (url) => { // this method incluedes a '?' or a '&' to the link.
         if(url.includes('?')) return basicFetch.fetch(`${url}&`); 
