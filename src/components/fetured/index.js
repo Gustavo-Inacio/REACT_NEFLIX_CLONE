@@ -3,7 +3,6 @@ import './styles.css';
 import request from '../../TMDB-request'
 
 const fetured = ({item}) => {
-    console.log(item);
     let airYear = new Date(item.first_air_date).getFullYear();
     let genres = [];
     for(let i in item.genres){

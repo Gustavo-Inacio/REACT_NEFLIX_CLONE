@@ -4,7 +4,7 @@ const language = "pt-BR";
 
 const basicFetch = {
     fetch: async (endingPoint) => {
-        return (await fetch(`https://api.themoviedb.org/3${endingPoint}api_key=${API_KEY}&language=${language}`)).json();
+        return (await fetch(`${API_BASE}${endingPoint}api_key=${API_KEY}&language=${language}`)).json();
     },
     urlFix: async (url) => { // this method incluedes a '?' or a '&' to the link.
         if(url.includes('?')) return basicFetch.fetch(`${url}&`); 
@@ -26,7 +26,7 @@ const createMovieList = async (slug, title, url) => {
 const getHomeList = async () => {
     return (
         [
-            await createMovieList('originals', 'Originais da Netflix', '/discover/tv/?with_network=213'),
+            await createMovieList('originals', 'Originais da Netflix', '/discover/tv'),
             await createMovieList('trending', 'Recomendados para Você', '/trending/all/week'),
             await createMovieList('toprated', 'Em Alta', '/movie/top_rated'),
             await createMovieList('action', 'Ação', '/discover/movie?with_genres=28'),

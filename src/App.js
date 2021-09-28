@@ -5,7 +5,6 @@ import MovieRow from './components/movieRow/index.js';
 import Fetured from './components/fetured';
 import Header from './components/Header';
 import loadingGif from './assets/loading.gif'
-import { CenterFocusStrong } from '@material-ui/icons';
 import TmdbIcon from './assets/tmbd.svg';
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
   useEffect(()=>{
     const loadHomeContent = async () => {
       let homeList = await request.getHomeList();
-      //console.log(homeList);
       setMovieList(homeList);
       let info = {};
       do{
@@ -69,7 +67,7 @@ function App() {
       <footer className="footer">
         <p> 
           <a href="https://www.themoviedb.org/">
-            <img class="tmdb-icon" src={TmdbIcon}></img>
+            <img className="tmdb-icon" alt="TMDB" src={TmdbIcon}></img>
           </a>
         </p>
       </footer>
